@@ -471,9 +471,13 @@
                                                 let qId = topicId + '-' + idx;
                         let isChecked = localStorage.getItem('done-' + qId) === 'true' ? 'checked' : '';
                         html += `<span>Question ${idx + 1} <span style="text-transform:none; font-weight:400; margin-left:0.5rem; color:var(--text-muted)">(Orig. No: ${origNum})</span></span>`;
-                        html += `<label class="q-checkbox-label"><input type="checkbox" class="q-checkbox" data-topic="${topicId}" data-qid="${qId}" onchange="updateProgress()" ${isChecked}> Done</label>`;
+                        
+                        // Right side container for marks and checkbox
+                        html += `<div style="display:flex; gap:1.5rem; align-items:center;">`;
                         if(q.marks) html += `<span class="marks">[${q.marks} Marks]</span>`;
-                        else html += `<span></span>`;
+                        html += `<label class="q-checkbox-label"><input type="checkbox" class="q-checkbox" data-topic="${topicId}" data-qid="${qId}" onchange="updateProgress()" ${isChecked}> Done</label>`;
+                        html += `</div>`;
+                        
                         html += `</div>`;
                         
                         // Clean up escaping errors from OCR/LLM
