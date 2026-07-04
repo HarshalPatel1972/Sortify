@@ -172,6 +172,19 @@
             display: none; /* Hidden on website */
         }
 
+
+        .sidebar li { position: relative; margin-bottom: 1rem; }
+        .progress-bg {
+            position: absolute; top: 0; left: 0; height: 100%;
+            background-color: #dcfce7; z-index: 0; transition: width 0.3s ease; border-radius: 4px; width: 0%;
+        }
+        .sidebar a { position: relative; z-index: 1; padding: 0.25rem 0.5rem; }
+        .q-checkbox-label {
+            display: flex; align-items: center; cursor: pointer; gap: 0.5rem;
+            font-family: 'Inter', sans-serif; font-weight: 500; color: var(--text-muted);
+        }
+        .q-checkbox { cursor: pointer; width: 16px; height: 16px; accent-color: #16a34a; }
+        @media print { .q-checkbox-label, .progress-bg { display: none !important; } .sidebar a { padding: 0 !important; } }
         .topic-section {
             margin-bottom: 5rem;
         }
@@ -316,7 +329,20 @@
                 font-weight: 600;
             }
             
-            .topic-section { margin-bottom: 2rem !important; }
+    
+        .sidebar li { position: relative; margin-bottom: 1rem; }
+        .progress-bg {
+            position: absolute; top: 0; left: 0; height: 100%;
+            background-color: #dcfce7; z-index: 0; transition: width 0.3s ease; border-radius: 4px; width: 0%;
+        }
+        .sidebar a { position: relative; z-index: 1; padding: 0.25rem 0.5rem; }
+        .q-checkbox-label {
+            display: flex; align-items: center; cursor: pointer; gap: 0.5rem;
+            font-family: 'Inter', sans-serif; font-weight: 500; color: var(--text-muted);
+        }
+        .q-checkbox { cursor: pointer; width: 16px; height: 16px; accent-color: #16a34a; }
+        @media print { .q-checkbox-label, .progress-bg { display: none !important; } .sidebar a { padding: 0 !important; } }
+        .topic-section { margin-bottom: 2rem !important; }
             .topic-header { 
                 font-size: 15pt; 
                 page-break-after: avoid; 
@@ -383,6 +409,24 @@
     </div>
     
     <script>
+
+        window.updateProgress = function() {
+            const checkboxes = document.querySelectorAll('.q-checkbox');
+            const topicCounts = {}; const topicDone = {};
+            checkboxes.forEach(cb => {
+                let t = cb.getAttribute('data-topic');
+                let qId = cb.getAttribute('data-qid');
+                if (!topicCounts[t]) { topicCounts[t] = 0; topicDone[t] = 0; }
+                topicCounts[t]++;
+                if (cb.checked) { topicDone[t]++; localStorage.setItem('done-' + qId, 'true'); }
+                else { localStorage.removeItem('done-' + qId); }
+            });
+            for (let t in topicCounts) {
+                let pct = (topicDone[t] / topicCounts[t]) * 100;
+                let bg = document.getElementById('progress-' + t);
+                if (bg) bg.style.width = pct + '%';
+            }
+        };
         // Sidebar Toggle Logic
         document.getElementById('sidebar-toggle').addEventListener('click', () => {
             document.getElementById('sidebar').classList.toggle('closed');
@@ -412,7 +456,7 @@
                     const topicId = "topic-" + topicName.replace(/\s+/g, '-').toLowerCase();
                     
                     // Add to Index
-                    indexList.innerHTML += `<li><a href="#${topicId}"><span>${topicName}</span> <span class="count">${topics[topicName].length}</span></a></li>`;
+                    indexList.innerHTML += `<li><div class="progress-bg" id="progress-${topicId}"></div><a href="#${topicId}"><span>${topicName}</span> <span class="count">${topics[topicName].length}</span></a></li>`;
                     
                     // Add Content
                     let html = `<div class="topic-section">`;
@@ -424,7 +468,10 @@
                         // Meta Row
                         html += `<div class="q-meta">`;
                         let origNum = q.question_number ? q.question_number : 'N/A';
+                                                let qId = topicId + '-' + idx;
+                        let isChecked = localStorage.getItem('done-' + qId) === 'true' ? 'checked' : '';
                         html += `<span>Question ${idx + 1} <span style="text-transform:none; font-weight:400; margin-left:0.5rem; color:var(--text-muted)">(Orig. No: ${origNum})</span></span>`;
+                        html += `<label class="q-checkbox-label"><input type="checkbox" class="q-checkbox" data-topic="${topicId}" data-qid="${qId}" onchange="updateProgress()" ${isChecked}> Done</label>`;
                         if(q.marks) html += `<span class="marks">[${q.marks} Marks]</span>`;
                         else html += `<span></span>`;
                         html += `</div>`;
@@ -449,6 +496,7 @@
                 
                 try {
                     if (window.MathJax) {
+                        updateProgress();
                         MathJax.typesetPromise();
                     }
                 } catch(e) {
