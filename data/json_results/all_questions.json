@@ -11520,7 +11520,7 @@
         "id": "9_Q1275",
         "question_number": "",
         "topic": "Atomic Physics",
-        "question_text": "What is Raman effect ? Describe briefly the chief characteristics of pure rotational spectra. The small rotational Raman displacement for HCl molecule is $41.6 \\cm$. Find the internuclear distance between the atoms forming the molecule.",
+        "question_text": "What is Raman effect ? Describe briefly the chief characteristics of pure rotational spectra. The small rotational Raman displacement for HCl molecule is $41.6 \\text{cm}$. Find the internuclear distance between the atoms forming the molecule.",
         "options": [],
         "marks": 30,
         "source_pdf": "9_PHYSICS2.pdf"
