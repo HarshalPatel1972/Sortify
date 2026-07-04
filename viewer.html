@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Question Bank</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Merriweather:wght@300;400;700&display=swap');
+        
+        :root {
+            --bg: #fdfdfc; /* Off-white paper background */
+            --text-main: #1c1917; /* Very dark stone for text */
+            --text-muted: #57534e; /* Muted stone for labels */
+            --border: #e7e5e4;
+            --accent: #881337; /* Academic burgundy */
+            --sidebar-bg: #f5f5f4;
+        }
+
+        body { 
+            font-family: 'Merriweather', serif; 
+            background-color: var(--bg); 
+            color: var(--text-main); 
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            display: flex;
+        }
+
+        /* Sidebar Index */
+        .sidebar {
+            width: 300px;
+            background: var(--sidebar-bg);
+            border-right: 1px solid var(--border);
+            height: 100vh;
+            position: fixed;
+            overflow-y: auto;
+            padding: 4rem 2rem 2.5rem 2rem; /* Added top padding for the button */
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            
+            /* Hide scrollbar but keep scrolling functionality */
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .sidebar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .sidebar.closed {
+            transform: translateX(-100%);
+        }
+
+        .sidebar h2 {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-top: 0;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.75rem;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 1rem;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            font-weight: 400;
+            transition: color 0.2s;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar a:hover {
+            color: var(--accent);
+        }
+
+        .sidebar a .count {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 300px;
+            padding: 4rem 5rem;
+            max-width: 1000px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: margin-left 0.3s ease, margin-right 0.3s ease;
+        }
+        
+        .main-content.expanded {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Toggle Button */
+        .toggle-btn {
+            position: fixed;
+            top: 1rem;
+            left: 1rem;
+            z-index: 1100;
+            background: var(--sidebar-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.4rem;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .toggle-btn:hover {
+            background: #e7e5e4;
+        }
+        .toggle-btn svg {
+            width: 22px;
+            height: 22px;
+            stroke: var(--text-main);
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.75rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: left;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 4rem;
+        }
+
+        .topic-section {
+            margin-bottom: 5rem;
+        }
+
+        .topic-header {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--text-main);
+            border-bottom: 2px solid var(--text-main);
+            padding-bottom: 0.75rem;
+            margin-bottom: 3rem;
+            padding-top: 2rem;
+        }
+
+        .question-card {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+            page-break-inside: avoid;
+        }
+
+        .question-card:last-child {
+            border-bottom: none;
+        }
+
+        .q-meta {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 600;
+        }
+
+        .marks {
+            color: var(--accent);
+        }
+
+        .q-text {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            overflow-x: auto;
+            color: var(--text-main);
+        }
+
+        /* Prevent MathJax formulas from overflowing the viewport horizontally */
+        mjx-container {
+            max-width: 100%;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .q-text strong {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            margin-right: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 1.5rem 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem 2rem;
+        }
+
+        .options li {
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .source {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-style: italic;
+            display: inline-block;
+            background: var(--sidebar-bg);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+        }
+
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+            }
+            body { 
+                display: block; 
+                font-size: 10pt;
+                line-height: 1.4;
+            }
+            .toggle-btn { display: none; }
+            
+            /* Reposition sidebar to act as a proper Table of Contents page */
+            .sidebar { 
+                position: static !important; 
+                width: 100% !important; 
+                height: auto !important; 
+                overflow: visible !important;
+                border-right: none !important; 
+                padding: 0 !important; 
+                margin-bottom: 2rem !important;
+                page-break-after: always;
+            }
+            .sidebar.closed {
+                transform: none !important;
+            }
+            .sidebar h2 { 
+                font-size: 14pt; 
+                text-align: left;
+                margin-bottom: 1rem; 
+            }
+            .sidebar ul {
+                display: block;
+                column-count: 2;
+                column-gap: 2rem;
+            }
+            .sidebar li { margin-bottom: 0.25rem; }
+            .sidebar a { font-size: 10pt; }
+
+            .main-content { margin-left: 0 !important; padding: 0 !important; max-width: none; }
+            
+            h1 { font-size: 20pt; margin-bottom: 0.5rem; }
+            .subtitle { font-size: 11pt; margin-bottom: 2rem !important; }
+            
+            .topic-section { margin-bottom: 2rem !important; }
+            .topic-header { 
+                font-size: 15pt; 
+                page-break-after: avoid; 
+                padding-top: 1rem !important;
+                margin-bottom: 1rem !important;
+                padding-bottom: 0.5rem !important;
+            }
+            
+            .question-card { 
+                page-break-inside: avoid; 
+                margin-bottom: 1.5rem !important;
+                padding-bottom: 1rem !important;
+            }
+            
+            .q-meta { font-size: 9pt; margin-bottom: 0.5rem !important; }
+            .q-text { font-size: 10.5pt !important; margin-bottom: 0.5rem !important; }
+            .q-text strong { font-size: 11pt !important; }
+            .options li { font-size: 10pt !important; }
+            
+            .source { font-size: 8pt !important; padding: 0.2rem 0.4rem !important; }
+        }
+    </style>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          displayMath: [['$$', '$$'], ['\\[', '\\]']],
+          macros: { AA: "\\mathring{A}" }
+        }
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    
+    <!-- Sidebar Toggle Button -->
+    <button class="toggle-btn" id="sidebar-toggle" title="Toggle Table of Contents">
+        <svg viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+    </button>
+
+    <!-- Sidebar / Index -->
+    <div class="sidebar" id="sidebar">
+        <h2>Table of Contents</h2>
+        <ul id="index-list">
+            <li><span style="color:#a8a29e;font-style:italic;">Loading index...</span></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <h1>Physics Question Bank</h1>
+        <div class="subtitle">Compiled from University Examination Papers</div>
+        
+        <div id="questions">
+            <p style="color:#78716c; font-style: italic; font-family:'Inter', sans-serif;">Loading and typesetting questions...</p>
+        </div>
+    </div>
+    
+    <script>
+        // Sidebar Toggle Logic
+        document.getElementById('sidebar-toggle').addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('closed');
+            document.getElementById('main-content').classList.toggle('expanded');
+        });
+
+        fetch('/data/json_results/all_questions.json?t=' + new Date().getTime())
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('questions');
+                const indexList = document.getElementById('index-list');
+                container.innerHTML = '';
+                indexList.innerHTML = '';
+                
+                const topics = {};
+                data.forEach(q => {
+                    let topic = q.topic ? q.topic.trim() : "Uncategorized";
+                    if (!topic) topic = "Uncategorized";
+                    topic = topic.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()).join(' ');
+                    if (!topics[topic]) topics[topic] = [];
+                    topics[topic].push(q);
+                });
+                
+                const sortedTopicNames = Object.keys(topics).sort();
+                
+                sortedTopicNames.forEach(topicName => {
+                    const topicId = "topic-" + topicName.replace(/\s+/g, '-').toLowerCase();
+                    
+                    // Add to Index
+                    indexList.innerHTML += `<li><a href="#${topicId}"><span>${topicName}</span> <span class="count">${topics[topicName].length}</span></a></li>`;
+                    
+                    // Add Content
+                    let html = `<div class="topic-section">`;
+                    html += `<h2 class="topic-header" id="${topicId}">${topicName}</h2>`;
+                    
+                    topics[topicName].forEach((q, idx) => {
+                        html += `<div class="question-card">`;
+                        
+                        // Meta Row
+                        html += `<div class="q-meta">`;
+                        let origNum = q.question_number ? q.question_number : 'N/A';
+                        html += `<span>Question ${idx + 1} <span style="text-transform:none; font-weight:400; margin-left:0.5rem; color:var(--text-muted)">(Orig. No: ${origNum})</span></span>`;
+                        if(q.marks) html += `<span class="marks">[${q.marks} Marks]</span>`;
+                        else html += `<span></span>`;
+                        html += `</div>`;
+                        
+                        // Clean up escaping errors from OCR/LLM
+                        let cleanText = q.question_text.replace(/\\\*/g, '*');
+                        html += `<div class="q-text">${cleanText}</div>`;
+                        
+                        if (q.options && q.options.length > 0) {
+                            html += `<ul class="options">`;
+                            q.options.forEach(opt => html += `<li>${opt}</li>`);
+                            html += `</ul>`;
+                        }
+                        
+                        html += `<div class="source">Source: ${q.source_pdf}</div>`;
+                        html += `</div>`;
+                    });
+                    
+                    html += `</div>`;
+                    container.innerHTML += html;
+                });
+                
+                try {
+                    if (window.MathJax) {
+                        MathJax.typesetPromise();
+                    }
+                } catch(e) {
+                    console.log("MathJax error:", e);
+                }
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('questions').innerHTML = '<p style="color:red; font-family:Inter, sans-serif;">Error loading JSON. Make sure you run this via a web server.</p>';
+            });
+    </script>
+</body>
+</html>
