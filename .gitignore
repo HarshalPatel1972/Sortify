@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Large files / Data
+PDFs/
+hin.traineddata
+tesseract_setup.exe
+*.pdf
+
+# Node
+node_modules/
+dist/
+.svelte-kit/
+.next/
+
+# OS
+.DS_Store
+Thumbs.db
