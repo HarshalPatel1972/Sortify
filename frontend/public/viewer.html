@@ -579,7 +579,7 @@
                 document.getElementById('main-content').classList.add('expanded');
             }
         });
-\n        fetch('/data/json_results/all_questions.json?t=' + new Date().getTime())
+        fetch('/data/json_results/all_questions.json?t=' + new Date().getTime())
             .then(res => res.json())
             .then(data => {
                 const container = document.getElementById('questions');
