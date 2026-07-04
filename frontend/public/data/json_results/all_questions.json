@@ -867,7 +867,7 @@
         "id": "13_Q97",
         "question_number": "1(b)",
         "topic": "Quantum Mechanics",
-        "question_text": "Consider a one-dimensional harmonic oscillator potential $V(x) = \\frac{1}{2}m\\omega_0^2x^2$, where $m$ represents the mass of a particle, $\\omega_0$ is the classical frequency of the oscillator and $x$ is the displacement from equilibrium position. Obtain the solution of the corresponding Schr\u00f6dinger equation. Using the normalization condition on the solution, show that the ground-state wave function has the form $\\psi_0(x) = \\l\\left(\\frac{m\\omega_0}{\\pi\\hbar}\\r\\right)^{\\frac{1}{4}}e^{-\\frac{m\\omega_0x^2}{2\\hbar}}$.",
+        "question_text": "Consider a one-dimensional harmonic oscillator potential $V(x) = \\frac{1}{2}m\\omega_0^2x^2$, where $m$ represents the mass of a particle, $\\omega_0$ is the classical frequency of the oscillator and $x$ is the displacement from equilibrium position. Obtain the solution of the corresponding Schr\u00f6dinger equation. Using the normalization condition on the solution, show that the ground-state wave function has the form $\\psi_0(x) = \\left(\\frac{m\\omega_0}{\\pi\\hbar}\\right)^{\\frac{1}{4}}e^{-\\frac{m\\omega_0x^2}{2\\hbar}}$.",
         "options": [],
         "marks": 30,
         "source_pdf": "13_PHYSICS_2.pdf"
@@ -2571,7 +2571,7 @@
         "id": "19_Q286",
         "question_number": "Q5(d)",
         "topic": "Thermodynamics",
-        "question_text": "Prove the thermodynamic relation: \\(\\l\\left(\\frac{\\partial V}{\\partial T}\\r\\right)_P = -\\frac{\\l\\left(\\frac{\\partial P}{\\partial T}\\r\\right)_V}{\\l\\left(\\frac{\\partial P}{\\partial V}\\r\\right)_T}\\) and hence show that \\(\\frac{dP}{dt} = \\frac{\\l\\left(\\frac{\\partial P}{\\partial V}\\r\\right)_T \\cdot \\l\\left(\\frac{\\partial V}{\\partial T}\\r\\right)_P}{\\l\\left(\\frac{\\partial S}{\\partial T}\\r\\right)_V}\\).",
+        "question_text": "Prove the thermodynamic relation: \\(\\left(\\frac{\\partial V}{\\partial T}\\right)_P = -\\frac{\\left(\\frac{\\partial P}{\\partial T}\\right)_V}{\\left(\\frac{\\partial P}{\\partial V}\\right)_T}\\) and hence show that \\(\\frac{dP}{dt} = \\frac{\\left(\\frac{\\partial P}{\\partial V}\\right)_T \\cdot \\left(\\frac{\\partial V}{\\partial T}\\right)_P}{\\left(\\frac{\\partial S}{\\partial T}\\right)_V}\\).",
         "options": [],
         "marks": 8,
         "source_pdf": "19_PHYSICS_PAPER_I.pdf"
@@ -4899,7 +4899,7 @@
         "id": "26_Q544",
         "question_number": "",
         "topic": "Quantum Mechanics",
-        "question_text": "A particle constrained to move along x-axis in the domain $0 < x < L$ has a wave function $y(x) = \\sin \\l\\left( \\frac{n \\pi x}{L} \\r\\right)$ where $n$ is an integer. Normalize the wave function and evaluate the expectation value of momentum of the particle.",
+        "question_text": "A particle constrained to move along x-axis in the domain $0 < x < L$ has a wave function $y(x) = \\sin \\left( \\frac{n \\pi x}{L} \\right)$ where $n$ is an integer. Normalize the wave function and evaluate the expectation value of momentum of the particle.",
         "options": [],
         "marks": 15,
         "source_pdf": "26_QP-CSM-23-PHYSICS-PAPER-II-29092023.pdf"
@@ -5376,7 +5376,7 @@
         "id": "27_Q597",
         "question_number": "1",
         "topic": "Thermodynamics",
-        "question_text": "Prove that the work done by a perfect gas during a quasi-static adiabatic expansion is given by $\\frac{P}{\\gamma - 1} \\l\\left(1 - \\frac{1}{\\gamma} \\r\\right)$, where $\\gamma$ is the ratio of specific heats.",
+        "question_text": "Prove that the work done by a perfect gas during a quasi-static adiabatic expansion is given by $\\frac{P}{\\gamma - 1} \\left(1 - \\frac{1}{\\gamma} \\right)$, where $\\gamma$ is the ratio of specific heats.",
         "options": [],
         "marks": 10,
         "source_pdf": "27_QP-CSM-24-PHYSICS-PAPER-I-031024.pdf"
@@ -5394,7 +5394,7 @@
         "id": "27_Q599",
         "question_number": "6(0)",
         "topic": "Electromagnetic Theory",
-        "question_text": "Using Maxwell\u2019s equations, obtain Poisson\u2019s equation and Laplace\u2019s equation. The region $-2 \\pi < \\phi < 2 \\pi$ has a charge density $\\rho = 10^7 \\cos \\l\\left( \\frac{\\phi}{7.97} \\r\\right)$. Elsewhere the charge density is zero. Find the electric potential $V$ and electric field $E$ from the Poisson\u2019s equation.",
+        "question_text": "Using Maxwell\u2019s equations, obtain Poisson\u2019s equation and Laplace\u2019s equation. The region $-2 \\pi < \\phi < 2 \\pi$ has a charge density $\\rho = 10^7 \\cos \\left( \\frac{\\phi}{7.97} \\right)$. Elsewhere the charge density is zero. Find the electric potential $V$ and electric field $E$ from the Poisson\u2019s equation.",
         "options": [],
         "marks": 15,
         "source_pdf": "27_QP-CSM-24-PHYSICS-PAPER-I-031024.pdf"
@@ -7664,7 +7664,7 @@
         "id": "34_Q848",
         "question_number": "4(b)",
         "topic": "Quantum Mechanics",
-        "question_text": "The normalized eigenfunction for the ground state of hydrogen atom is \\(\\psi_{100} = \\frac{1}{\\sqrt{\\pi}} \\l\\left(\\frac{1}{a_0}\\r\\right)^{3/2} e^{-r/a_0}\\). Calculate the expectation value of the radius vector \\(r\\) of the electron in the ground state.",
+        "question_text": "The normalized eigenfunction for the ground state of hydrogen atom is \\(\\psi_{100} = \\frac{1}{\\sqrt{\\pi}} \\left(\\frac{1}{a_0}\\right)^{3/2} e^{-r/a_0}\\). Calculate the expectation value of the radius vector \\(r\\) of the electron in the ground state.",
         "options": [],
         "marks": 10,
         "source_pdf": "34_QP-IFSM-22-281122-PHYSICS-PAPER-II.pdf"
@@ -8707,7 +8707,7 @@
         "id": "37_Q963",
         "question_number": "Q12",
         "topic": "Thermodynamics",
-        "question_text": "Deduce the thermodynamic relation : $$\\l\\left(\\frac{\\partial u}{\\partial v}\\r\\right)_T = T \\l\\left(\\frac{\\partial P}{\\partial T}\\r\\right)_v - P$$ Using the expression establish Clausius-Clapeyron latent heat equation $$\\frac{dP}{dT} = \\frac{L}{T(V_2 - V_1)}$$",
+        "question_text": "Deduce the thermodynamic relation : $$\\left(\\frac{\\partial u}{\\partial v}\\right)_T = T \\left(\\frac{\\partial P}{\\partial T}\\right)_v - P$$ Using the expression establish Clausius-Clapeyron latent heat equation $$\\frac{dP}{dT} = \\frac{L}{T(V_2 - V_1)}$$",
         "options": [],
         "marks": 10,
         "source_pdf": "37_QP-IFSM-24-PHYSICS-PAPER-I-021224.pdf"
@@ -10192,7 +10192,7 @@
         "id": "4_Q1128",
         "question_number": "4",
         "topic": "Thermodynamics",
-        "question_text": "According to Debye\u2019s theory of specific heat of a solid, the molar heat capacity of diamond crystal at constant volume varies with temperature (T) as follows: $$C_V = \\frac{12}{5} \\pi^4 R \\l\\left(\\frac{T}{\\Theta}\\r\\right)^3$$ where R is the molar gas constant = 8.315 J/mol-K and $\\Theta$ = 2220 K for diamond. Calculate the change in entropy of diamond of 0.36 g mass when it is heated at constant volume from 0 K to 300 K.",
+        "question_text": "According to Debye\u2019s theory of specific heat of a solid, the molar heat capacity of diamond crystal at constant volume varies with temperature (T) as follows: $$C_V = \\frac{12}{5} \\pi^4 R \\left(\\frac{T}{\\Theta}\\right)^3$$ where R is the molar gas constant = 8.315 J/mol-K and $\\Theta$ = 2220 K for diamond. Calculate the change in entropy of diamond of 0.36 g mass when it is heated at constant volume from 0 K to 300 K.",
         "options": [],
         "marks": 8,
         "source_pdf": "4_PHYSICS-PAPER-I.pdf"
@@ -10570,7 +10570,7 @@
         "id": "6_Q1170",
         "question_number": "2(fa)",
         "topic": "Atomic Physics",
-        "question_text": "The ground state wave function for hydrogen atom is $\\psi(r) = \\frac{1}{\\sqrt{\\pi}} \\l\\left(\\frac{1}{a_0}\\r\\right)^{\\frac{3}{2}} e^{-\\frac{r}{a_0}}$. Sketch the wave function and the probability density as a function of the separation distance $r$. Calculate the probability that the electron in the ground state is found beyond the Bohr radius.",
+        "question_text": "The ground state wave function for hydrogen atom is $\\psi(r) = \\frac{1}{\\sqrt{\\pi}} \\left(\\frac{1}{a_0}\\right)^{\\frac{3}{2}} e^{-\\frac{r}{a_0}}$. Sketch the wave function and the probability density as a function of the separation distance $r$. Calculate the probability that the electron in the ground state is found beyond the Bohr radius.",
         "options": [],
         "marks": 20,
         "source_pdf": "6_PHYSICS-PAPER-II.pdf"
@@ -10962,7 +10962,7 @@
         "id": "7_Q1213",
         "question_number": "1",
         "topic": "Thermodynamics",
-        "question_text": "Show that the change in entropy is given by $\\Delta S = 2mC \\ln \\l\\left( \\frac{T_1 + T_2}{2T_1} \\r\\right)$, where $m$ is the mass of water, $C$ is the specific heat capacity, $T_1$ and $T_2$ are the temperatures of the water.",
+        "question_text": "Show that the change in entropy is given by $\\Delta S = 2mC \\ln \\left( \\frac{T_1 + T_2}{2T_1} \\right)$, where $m$ is the mass of water, $C$ is the specific heat capacity, $T_1$ and $T_2$ are the temperatures of the water.",
         "options": [],
         "marks": 10,
         "source_pdf": "7_PHYSICS1.pdf"
