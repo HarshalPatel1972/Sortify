@@ -1,0 +1,403 @@
+[
+    {
+        "id": "10_Q1",
+        "question_number": "1",
+        "topic": "Quantum Mechanics",
+        "question_text": "A beam of 4.0 keV electrons from a source is incident on a target 50.0 cm away. Find the radius of the electron beamspot due to Heisenberg’s uncertainty principle.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q2",
+        "question_number": "2",
+        "topic": "Quantum Mechanics",
+        "question_text": "Calculate the lowest energy of an electron confined to move in a 1-dimensional potential well of width 10 nm.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q3",
+        "question_number": "3",
+        "topic": "Quantum Mechanics",
+        "question_text": "Estimate the de Broglie wavelength of the electron orbitting in the first excited state of the hydrogen atom.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q4",
+        "question_number": "4",
+        "topic": "Molecular Physics",
+        "question_text": "Show that the lines in the absorption spectra corresponding to the rotational transitions from two adjacent energy levels of a medium sized molecule at room temperature have comparable intensities.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q5",
+        "question_number": "1",
+        "topic": "Molecular Vibration",
+        "question_text": "Given the force constant of HCl molecule = 516 N/m, determine the wave number of the fundamental mode of vibration of the molecule. How many transition lines one can expect in the vibration spectra of HCl molecule at room temperature?",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q6",
+        "question_number": "2",
+        "topic": "Atomic Physics",
+        "question_text": "Evaluate the most probable distance of the electron from nucleus of a hydrogen atom in its 2p state. What is the probability of finding the electron at this distance?",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q7",
+        "question_number": "3",
+        "topic": "Quantum Mechanics",
+        "question_text": "Using Schrödinger equation, obtain the eigenfunctions and eigenvalues of energy for a 1-dimensional harmonic oscillator. Sketch the profiles of eigenfunctions for first three energy states.",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q8",
+        "question_number": "4",
+        "topic": "Quantum Tunneling",
+        "question_text": "Calculate the probability of transmission of an electron of 1.0 eV energy through a potential barrier of 4.0 eV and 0.1 nm width.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q9",
+        "question_number": "5",
+        "topic": "Raman Spectroscopy",
+        "question_text": "Explain Stokes and anti-Stokes Raman scattering with the help of energy level diagram. For a diatomic molecule, obtain expressions for transition energies of its Raman spectra with rotational fine structure and hence the wave numbers of the Stokes lines.",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q10",
+        "question_number": "6",
+        "topic": "Raman Spectroscopy",
+        "question_text": "Explain why lines in some Raman spectra are found to be plane polarized to different extents even though the exciting radiation is completely unpolarized.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q11",
+        "question_number": "7",
+        "topic": "Franck-Condon Principle",
+        "question_text": "State Franck-Condon principle. Define Franck-Condon factors. Using schematic diagram, explain the decay of excited states leading to the phenomena of fluorescence and phosphorescence.",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q12",
+        "question_number": "8",
+        "topic": "Angular Momentum",
+        "question_text": "Explain why the square of the angular momentum (L^2) and only one of the components (Lx, Ly, Lz) of L are regarded as constants of motion.",
+        "options": [],
+        "marks": 15,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P4_D1.png",
+            "10_P4_D2.png"
+        ]
+    },
+    {
+        "id": "10_Q13",
+        "question_number": "5",
+        "topic": "Nuclear Magnetic Resonance",
+        "question_text": "Explain the principle of Nuclear Magnetic Resonance (NMR) with the help of an energy level diagram. Give examples of nuclei which exhibit NMR. What major inferences can be drawn from an NMR spectra?",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q14",
+        "question_number": "5",
+        "topic": "Nuclear Magnetic Resonance",
+        "question_text": "In an NMR experiment, hydrogen atoms are subjected to a magnetic field of 5.0 T. Determine the difference in energy (kJ/mol) between two spin states of the nuclei of hydrogen atom and the frequency of radiation required for NMR.",
+        "options": [],
+        "marks": 15,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q15",
+        "question_number": "5",
+        "topic": "Nuclear Physics",
+        "question_text": "Estimate the order of nuclear radius of lead (Z = 82) using the large angle (back) scattering of alpha particles of energy 10 MeV incident on a target (lead).",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q16",
+        "question_number": "5",
+        "topic": "Nuclear Forces",
+        "question_text": "Distinguish between charge independence and charge symmetry of nuclear force. Give one example for each of these.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q17",
+        "question_number": "5",
+        "topic": "Particle Physics",
+        "question_text": "Describe briefly how parity violation in B-decay was experimentally observed? What do you understand by the statement, 'neutrinos are left-handed'?",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q18",
+        "question_number": "5",
+        "topic": "Semiconductors",
+        "question_text": "The energy (E) and wave vector (k) for a conduction band electron in a semiconductor are related as $E = \\frac{\\hbar^2 k^2}{2m}$. Calculate the effective mass of the electron.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q19",
+        "question_number": "5",
+        "topic": "Operational Amplifier",
+        "question_text": "Consider the operational amplifier circuit given above. Given, $R_1 = 10 k\\Omega$, $R_2 = 150 k\\Omega$ and the product of the open loop gain of the amplifier and its bandwidth = $10^6$ Hz. Determine the closed loop bandwidth of the amplifier.",
+        "options": [],
+        "marks": 10,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P6_D1.png",
+            "10_P6_D2.png",
+            "10_P6_D3.png",
+            "10_P6_D4.png",
+            "10_P6_D5.png"
+        ]
+    },
+    {
+        "id": "10_Q20",
+        "question_number": "6(a)",
+        "topic": "Nuclear Physics",
+        "question_text": "Write two properties of deutron which support the existence of non-central tensor force.",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P6_D1.png",
+            "10_P6_D2.png",
+            "10_P6_D3.png",
+            "10_P6_D4.png",
+            "10_P6_D5.png"
+        ]
+    },
+    {
+        "id": "10_Q21",
+        "question_number": "6(b)",
+        "topic": "Nuclear Physics",
+        "question_text": "Given that the deutron magnetic moment operator (in units of nuclear magneton) can be expressed as $\\mu = \\mu_{n0} + \\mu_{p0} + \\frac{1}{2}\\mu_{n}(\\hat{\\ell} \\cdot \\hat{S})$. Find out the D-state probability of deutron wave function. Given: $\\mu_n = 0.857 \\mu_N$, $\\mu_p = -1.913 \\mu_N$, and $\\mu_d = 2.793 \\mu_N$ (nuclear magneton).",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P6_D1.png",
+            "10_P6_D2.png",
+            "10_P6_D3.png",
+            "10_P6_D4.png",
+            "10_P6_D5.png"
+        ]
+    },
+    {
+        "id": "10_Q22",
+        "question_number": "6(c)",
+        "topic": "Nuclear Physics",
+        "question_text": "How does one explain the approximate constancy of average binding energy per nucleon (BE/A) of nuclei in the region $30 \\leq A \\leq 170$ in the plot of BE/A versus mass number A? Write the semi-empirical mass formula pointing out the role of volume term, surface energy term, coulomb and symmetry energy correction terms.",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P6_D1.png",
+            "10_P6_D2.png",
+            "10_P6_D3.png",
+            "10_P6_D4.png",
+            "10_P6_D5.png"
+        ]
+    },
+    {
+        "id": "10_Q23",
+        "question_number": "7(i)",
+        "topic": "Particle Physics",
+        "question_text": "State the three characteristic properties of strong, weak and electromagnetic forces distinguishing one from the other.",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q24",
+        "question_number": "7(ii)",
+        "topic": "Particle Physics",
+        "question_text": "Point out the interactions in which the following conservation laws are obeyed or violated: \\(a)\\) Isotopic spin, \\(b)\\) Hyper charge, \\(c)\\) Lepton number, \\(d)\\) Charge conjugation",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q25",
+        "question_number": "7(iii)",
+        "topic": "Particle Physics",
+        "question_text": "Write down the quark constituents of each of the following: \\(a)\\) $\\pi$, \\(b)\\) $K'$, \\(c)\\) $\\Lambda$, \\(d)\\) $\\Sigma$",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q26",
+        "question_number": "",
+        "topic": "Statistical Mechanics",
+        "question_text": "A system of paramagnetic atoms (N per unit volume) which can occupy only two energy levels in a uniform external magnetic field H is at a temperature T. If this system follows Boltzmann's distribution, find the magnetisation and susceptibility of the system.",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q27",
+        "question_number": "",
+        "topic": "Superconductivity",
+        "question_text": "Obtain the expression for penetration depth using London's equation of superconductivity and explain its significance.",
+        "options": [],
+        "marks": 15,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q28",
+        "question_number": "",
+        "topic": "Semiconductors",
+        "question_text": "In a semiconductor, the effective masses of an electron and a hole are $0.07m$ and $0.4m$, respectively, where $m$ is the free electron mass. Assuming that the average relaxation time for the hole is half of that for the electrons, calculate the mobility of the holes when the mobility of the electrons is $0.8 \\frac{m^2}{V \\cdot s}$.",
+        "options": [],
+        "marks": 0,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": false,
+        "diagram_images": []
+    },
+    {
+        "id": "10_Q29",
+        "question_number": "8. (a)",
+        "topic": "Amplifier",
+        "question_text": "An amplifier in common-emitter configuration is shown in the above figure. If the current gain $\\beta = 100$ and the a.c. emitter resistance $= 25.0 \\Omega$, determine the input impedance and the voltage gain of the amplifier.",
+        "options": [],
+        "marks": 15,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P8_D1.png",
+            "10_P8_D2.png",
+            "10_P8_D3.png"
+        ]
+    },
+    {
+        "id": "10_Q30",
+        "question_number": "8. (b)",
+        "topic": "JFET",
+        "question_text": "Given above is a circuit of self biased p-channel JFET. If the pinch off voltage is $5.0 \\text{ V}$ and $V_{io} = 6.0 \\text{ V}$, calculate the saturation current $I_c$.",
+        "options": [],
+        "marks": 15,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P8_D1.png",
+            "10_P8_D2.png",
+            "10_P8_D3.png"
+        ]
+    },
+    {
+        "id": "10_Q31",
+        "question_number": "8. (c)",
+        "topic": "Nuclear Physics",
+        "question_text": "Draw a schematic diagram of the single particle energy levels in a shell model including the effect of spin-orbit coupling. Show how it explains magic numbers in nuclei. Give two examples to show how this scheme predicts the spins and particles of odd A nuclei.",
+        "options": [],
+        "marks": 20,
+        "source_pdf": "10_PHYSICS2_0.pdf",
+        "has_diagram": true,
+        "diagram_images": [
+            "10_P8_D1.png",
+            "10_P8_D2.png",
+            "10_P8_D3.png"
+        ]
+    }
+]
