@@ -150,6 +150,17 @@
             letter-spacing: -0.02em;
         }
 
+        .app-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: opacity 0.2s;
+        }
+        
+        .app-link:hover {
+            opacity: 0.8;
+            text-decoration: underline;
+        }
+
         .subtitle {
             font-family: 'Inter', sans-serif;
             color: var(--text-muted);
@@ -347,7 +358,7 @@
 
     <!-- Main Content -->
     <div class="main-content" id="main-content">
-        <h1>Sortify - Physics Question Bank</h1>
+        <h1><a href="https://official-sortify.vercel.app/" target="_blank" class="app-link">Sortify</a> - Physics Question Bank</h1>
         <div class="subtitle">Compiled from University Examination Papers</div>
         
         <div id="questions">
