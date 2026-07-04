@@ -168,6 +168,10 @@
             margin-bottom: 4rem;
         }
 
+        .web-view-link {
+            display: none; /* Hidden on website */
+        }
+
         .topic-section {
             margin-bottom: 5rem;
         }
@@ -278,30 +282,39 @@
                 height: auto !important; 
                 overflow: visible !important;
                 border-right: none !important; 
-                padding: 0 !important; 
+                padding: 1rem 0 !important; 
                 margin-bottom: 2rem !important;
+                background: transparent !important;
                 page-break-after: always;
             }
             .sidebar.closed {
                 transform: none !important;
             }
             .sidebar h2 { 
-                font-size: 14pt; 
+                font-size: 16pt; 
                 text-align: left;
-                margin-bottom: 1rem; 
+                margin-bottom: 1.5rem; 
             }
             .sidebar ul {
                 display: block;
                 column-count: 2;
                 column-gap: 2rem;
             }
-            .sidebar li { margin-bottom: 0.25rem; }
-            .sidebar a { font-size: 10pt; }
+            .sidebar li { margin-bottom: 0.8rem; }
+            .sidebar a { font-size: 11pt; }
 
             .main-content { margin-left: 0 !important; padding: 0 !important; max-width: none; }
             
             h1 { font-size: 20pt; margin-bottom: 0.5rem; }
             .subtitle { font-size: 11pt; margin-bottom: 2rem !important; }
+            
+            .web-view-link {
+                display: inline-block;
+                margin-left: 1rem;
+                color: #2563eb !important; /* Standard blue link color for PDF */
+                text-decoration: underline;
+                font-weight: 600;
+            }
             
             .topic-section { margin-bottom: 2rem !important; }
             .topic-header { 
@@ -359,7 +372,10 @@
     <!-- Main Content -->
     <div class="main-content" id="main-content">
         <h1><a href="https://official-sortify.vercel.app/" target="_blank" class="app-link">Sortify</a> - Physics Question Bank</h1>
-        <div class="subtitle">Compiled from University Examination Papers</div>
+        <div class="subtitle">
+            Compiled from University Examination Papers
+            <a href="https://official-sortify.vercel.app/viewer.html" class="web-view-link" target="_blank">Open Interactive Web View ↗</a>
+        </div>
         
         <div id="questions">
             <p style="color:#78716c; font-style: italic; font-family:'Inter', sans-serif;">Loading and typesetting questions...</p>
